@@ -1,0 +1,62 @@
+<html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Układ strony</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .header, .footer {
+        background: #eee;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #000;
+    }
+
+    .container {
+        display: flex;
+        height: 300px;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+    }
+
+    .left, .center, .right {
+        border: 1px solid #000;
+        border-top: none;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .left, .right {
+        width: 25%;
+    }
+
+    .center {
+        width: 50%;
+    }
+
+    .footer {
+        border-top: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">Blok nagłówkowy</div>
+
+<div class="container">
+    <div class="left">Blok sekcji lewej</div>
+    <div class="center">Blok sekcji środkowej</div>
+    <div class="right">Blok sekcji prawej</div>
+</div>
+
+<div class="footer">Blok stopki</div>
+
+</body>
+</html>
